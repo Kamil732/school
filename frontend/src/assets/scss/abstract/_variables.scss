@@ -1,6 +1,9 @@
 $background-color: #eee;
 
-$navbar-color: #15426C;
+$primary-color: #15426C;
+$primary-color-hover: darken($primary-color, 10%);
+$secondary-color: #fff;
+$secondary-color-hover: darken($secondary-color, 10%);
 
 $dark-color: #333;
 $light-color: #fff;
