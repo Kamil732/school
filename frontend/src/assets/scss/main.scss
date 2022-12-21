@@ -4,5 +4,13 @@
 @import './base/utilities';
 @import './base/base';
 
-@import './layout/navbar';
+@import './layout/navbar/mobile';
 @import './layout/btn';
+
+@include media-tablet {
+    @import './layout/navbar/tablet';
+}
+
+@include media-laptop {
+    @import './layout/navbar/laptop';
+}
