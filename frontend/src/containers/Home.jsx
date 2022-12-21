@@ -1,7 +1,13 @@
 import React from 'react'
 
 function Home() {
-	return <>home</>
+	return (
+		<>
+			home
+			<p>xdwe</p>
+			sgsg
+		</>
+	)
 }
 
 export default Home

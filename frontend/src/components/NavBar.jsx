@@ -13,7 +13,7 @@ function NavBar() {
 
 	return (
 		<nav className="navbar">
-			<Link to="/">
+			<Link to="/" onClick={() => setOpen(false)}>
 				<img
 					className="navbar__logo"
 					src={Logo}
@@ -65,6 +65,21 @@ function NavBar() {
 						</NavLink>
 					</li>
 				</ul>
+			</div>
+
+			<div className="navbar__contact">
+				<p>
+					<span>Adres:</span> Sadkowska 19, Radom 26-600, Polska
+				</p>
+				<p>
+					<span>Tel:</span> 48 344-81-16, 48 344-88-28
+				</p>
+				<p>
+					<span>Faks:</span> 48 344-05-97
+				</p>
+				<p>
+					<span>E-mail:</span> elektronik@radom.pl
+				</p>
 			</div>
 		</nav>
 	)
