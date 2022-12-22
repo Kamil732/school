@@ -34,8 +34,6 @@
 }
 
 @include media-laptop-lg {
-    @import './layout/pagehero/laptop-lg';
-
     .quote {
         font-size: 1.2em;
     }
