@@ -2,7 +2,7 @@ $background-color: #eee;
 
 $primary-color: #15426C;
 $primary-color-hover: darken($primary-color, 10%);
-$secondary-color: #fff;
+$secondary-color: darken(#fff, 2%);
 $secondary-color-hover: darken($secondary-color, 10%);
 
 $dark-color: #333;

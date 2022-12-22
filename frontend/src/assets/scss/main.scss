@@ -5,12 +5,38 @@
 @import './base/base';
 
 @import './layout/navbar/mobile';
+@import './layout/pagehero/mobile';
 @import './layout/btn';
+
+.tablet {
+    display: none;
+}
 
 @include media-tablet {
     @import './layout/navbar/tablet';
+    @import './layout/pagehero/tablet';
+
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: initial;
+    }
 }
 
 @include media-laptop {
     @import './layout/navbar/laptop';
+    @import './layout/pagehero/laptop';
+
+    .quote {
+        font-size: 1em;
+    }
+}
+
+@include media-laptop-lg {
+    @import './layout/pagehero/laptop-lg';
+
+    .quote {
+        font-size: 1.2em;
+    }
 }

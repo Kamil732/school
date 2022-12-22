@@ -11,7 +11,12 @@
     width: 100%;
     padding: 0.5rem;
     padding-bottom: 3rem;
+    z-index: 1;
     @include shadow-sm;
+
+    &__logo {
+        border-radius: 4px;
+    }
 
     &__container {
         width: 100%;
