@@ -1,5 +1,3 @@
-$navbar-size: 3rem;
-
 .navbar {
     gap: 1rem;
     padding-bottom: 2.5rem;
@@ -31,14 +29,38 @@ $navbar-size: 3rem;
         }
 
         &__item > a {
+            position: relative;
             padding: 0;
             color: $light-color;
             font-weight: 500;
             font-size: 0.8em;
+            transition: transform 0.2s ease;
+            transform-origin: bottom;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 0.1em;
+                background-color: $light-color;
+                opacity: 0;
+                transition: opacity 300ms, transform 300ms;
+            }
 
             &:hover, &:focus, &.active {
                 background-color: transparent;
+                transform: scale(1.05);
+
+                &::after {
+                    opacity: 0.8;
+                    transform: translate3d(0, 0.2em, 0);
+                }
             }
+
+
+
         }
     }
 
