@@ -23,8 +23,8 @@ function NavBar() {
 			</Link>
 			<div className="navbar__container">
 				<div className="navbar__mobile mobile">
-					<span>Menu</span>
-					<button className="btn" onClick={onClick}>
+					<label htmlFor="menu-btn">Menu</label>
+					<button id="menu-btn" className="btn" onClick={onClick}>
 						{open ? <IoClose /> : <HiMenu />}
 					</button>
 				</div>

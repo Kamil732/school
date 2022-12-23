@@ -7,7 +7,7 @@ import { FadeIn } from 'react-slide-fade-in'
 function MainPagehero() {
 	return (
 		<>
-			<section className="pagehero">
+			<section className="pagehero" style={{ paddingTop: '2rem' }}>
 				<FadeIn
 					from="top"
 					positionOffset={20}

@@ -1,5 +1,11 @@
 .pagehero {
     &__content {
         flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    &__text {
+        letter-spacing: 1px;
+        font-size: 2em;
     }
 }
