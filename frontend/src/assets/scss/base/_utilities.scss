@@ -5,3 +5,10 @@
     font-weight: 500;
     letter-spacing: 1px;
 }
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

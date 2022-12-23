@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap');
 
 .pagehero {
-    background-color: $secondary-color;
+    background: linear-gradient(to bottom, $secondary-color, $secondary-color-hover);
     padding: 1rem 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
 
     &__content {
-        // width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -18,6 +21,5 @@
         font-size: 1.6em;
         font-weight: 600;
         text-align: center;
-        // letter-spacing: 1px;
     }
 }
