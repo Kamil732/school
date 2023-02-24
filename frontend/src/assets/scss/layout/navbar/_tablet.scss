@@ -29,9 +29,10 @@
             padding: 0;
             color: $light-color;
             font-weight: 500;
-            font-size: 0.8em;
+            font-size: 0.6em;
             transition: transform 0.2s ease;
             transform-origin: bottom;
+            // letter-spacing: 0;Ć
 
             &::after {
                 content: '';

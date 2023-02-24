@@ -6,6 +6,7 @@
 
 @import './layout/navbar/mobile';
 @import './layout/pagehero/mobile';
+@import './layout/slider/mobile';
 @import './layout/btn';
 
 .tablet {
@@ -15,6 +16,7 @@
 @include media-tablet {
     @import './layout/navbar/tablet';
     @import './layout/pagehero/tablet';
+    @import './layout/slider/tablet';
 
     .mobile {
         display: none;
@@ -34,6 +36,7 @@
 }
 
 @include media-laptop-lg {
+    @import './layout/navbar/laptop-lg';
     @import './layout/pagehero/laptop-lg';
 
     .quote {

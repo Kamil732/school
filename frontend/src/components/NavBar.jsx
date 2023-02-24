@@ -36,11 +36,11 @@ function NavBar() {
 						</NavLink>
 					</li>
 					<li className="navbar__list__item">
-						<NavLink to="/aktualnosci" onClick={onClick}>
-							aktualności
+						<NavLink to="/o-szkole" onClick={onClick}>
+							o szkole
 						</NavLink>
 					</li>
-					<li className="navbar__list__item">
+					{/* <li className="navbar__list__item">
 						<a
 							href="https://adfslight.vulcan.net.pl/radomprojekt/LoginPage.aspx?ReturnUrl=%2fradomprojekt%2fDefault.aspx%3fwa%3dwsignin1.0%26wtrealm%3dhttps%253A%252F%252Fsynergia.librus.pl%252Floguj%252Fradom"
 							target="_blank"
@@ -48,20 +48,40 @@ function NavBar() {
 						>
 							e-dziennik
 						</a>
-					</li>
+					</li> */}
 					<li className="navbar__list__item">
-						<NavLink to="/kaluzula" onClick={onClick}>
-							klauzula dostępności
+						<NavLink to="/oferty" onClick={onClick}>
+							oferty
 						</NavLink>
 					</li>
 					<li className="navbar__list__item">
-						<NavLink to="/rodo" onClick={onClick}>
-							rodo
+						<NavLink to="/strefa-ucznia" onClick={onClick}>
+							strefa ucznia
+						</NavLink>
+					</li>
+					<li className="navbar__list__item">
+						<NavLink to="/strefa-rodzica" onClick={onClick}>
+							strefa rodzica
+						</NavLink>
+					</li>
+					<li className="navbar__list__item">
+						<NavLink to="/sport-rekreacja" onClick={onClick}>
+							sporty
+						</NavLink>
+					</li>
+					<li className="navbar__list__item">
+						<NavLink to="/ogloszenia" onClick={onClick}>
+							ogłoszenia
+						</NavLink>
+					</li>
+					<li className="navbar__list__item">
+						<NavLink to="/linki" onClick={onClick}>
+							linki
 						</NavLink>
 					</li>
 					<li className="navbar__list__item">
 						<NavLink to="/kontakt" onClick={onClick}>
-							Kontakt
+							kontakt
 						</NavLink>
 					</li>
 				</ul>

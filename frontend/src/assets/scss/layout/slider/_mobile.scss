@@ -1,0 +1,25 @@
+.slider {
+    width: 100vw;
+    height: 500px;
+    position: relative;
+
+    &__img {
+        width: 100%;
+        object-fit: fill;
+        position: absolute;
+        opacity: 0;
+        transition: opacity 1.2s ease-in;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    &__text {
+        font-size: 3em;
+        font-weight: 800;
+        opacity: 0.9;
+        position: absolute;
+        margin: auto;
+    }
+}

@@ -1,9 +1,10 @@
 .navbar {
     &__list {
-        gap: 2.5rem;
+        gap: 1.5rem;
 
         &__item > a {
             font-size: 0.9em;
+            letter-spacing: 0;
         }
     }
 }
