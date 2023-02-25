@@ -22,10 +22,9 @@ function PhotoSilder({ images }) {
 					key={idx}
 					alt="Szkoła"
 					className={`slider__img${active === idx ? ' active' : ''}`}
-					height={500}
 				/>
 			))}
-			<p className="slider__text">Elektronik Wita!</p>
+			<h1 className="slider__text">Witamy Na Stronie Elektronika!</h1>
 		</figure>
 	)
 }

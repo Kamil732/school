@@ -29,6 +29,8 @@
 @include media-laptop {
     @import './layout/navbar/laptop';
     @import './layout/pagehero/laptop';
+    @import './layout/slider/laptop';
+
 
     .quote {
         font-size: 1em;

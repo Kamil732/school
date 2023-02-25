@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap');
+
 .slider {
     width: 100vw;
-    height: 500px;
+    height: 350px;
     position: relative;
 
     &__img {
         width: 100%;
-        object-fit: fill;
+        height: 100%;
+        object-fit: cover;
         position: absolute;
         opacity: 0;
-        transition: opacity 1.2s ease-in;
+        filter: brightness(50%);
+        transition: opacity 1.2s ease-in-out;
 
         &.active {
             opacity: 1;
@@ -16,10 +20,13 @@
     }
 
     &__text {
+        font-family: 'Exo', sans-serif;
+        letter-spacing: 1px;
+        color: $secondary-color;
         font-size: 3em;
-        font-weight: 800;
+        font-weight: 700;
         opacity: 0.9;
-        position: absolute;
-        margin: auto;
+        text-align: center;
+        padding-top: 10%;
     }
 }
