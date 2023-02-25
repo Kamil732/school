@@ -1,5 +1,6 @@
 .navbar {
-    position: relative;
+    position: sticky;
+    top: 0;
     background: linear-gradient(to bottom, lighten($primary-color, 10%), darken($primary-color-hover, 10%));
     background-color: transparent;
     // background-image: linear-gradient(180deg, #185792 4%, darken(#185792, 10%) 100%);
@@ -12,7 +13,13 @@
     padding: 0.5rem;
     padding-bottom: 3rem;
     z-index: 1;
+    transition: transform 0.3s ease-in;
+    transform-origin: 100% 0;
     @include shadow-sm;
+
+    &.hide {
+        transform: scaleY(0);
+    }
 
     &__logo {
         border-radius: 4px;

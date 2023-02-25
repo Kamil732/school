@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
@@ -8,11 +8,39 @@ import { IoClose } from 'react-icons/io5'
 
 function NavBar() {
 	const [open, setOpen] = useState(false)
+	const [show, setShow] = useState(true)
+	const [lastScrollY, setLastScrollY] = useState(0)
 
 	const onClick = () => setOpen(!open)
 
+	useEffect(() => {
+		const controlNavbar = () => {
+			if (typeof window !== 'undefined' && window.scrollY > 150) {
+				if (window.scrollY > lastScrollY) {
+					// if scroll down hide the navbar
+					setShow(false)
+				} else {
+					// if scroll up show the navbar
+					setShow(true)
+				}
+
+				// remember current page location to use in the next move
+				setLastScrollY(window.scrollY)
+			}
+		}
+
+		if (typeof window !== 'undefined') {
+			window.addEventListener('scroll', controlNavbar)
+
+			// cleanup function
+			return () => {
+				window.removeEventListener('scroll', controlNavbar)
+			}
+		}
+	}, [lastScrollY])
+
 	return (
-		<nav className="navbar">
+		<nav className={`navbar${!show ? ' hide' : ' '}`}>
 			<Link to="/" onClick={() => setOpen(false)}>
 				<img
 					className="navbar__logo"
