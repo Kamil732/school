@@ -6,7 +6,32 @@ import PhotoSilder from '../components/PhotoSlider'
 import { MONTHS, COMPASS_VALUES } from '../app/utilites'
 
 function Home() {
+	const getVacationTimer = () => {
+		const vacation = new Date(2023, 6, 24)
+
+		const total = Date.parse(vacation) - Date.parse(new Date())
+		const seconds = Math.floor((total / 1000) % 60)
+		const minutes = Math.floor((total / 1000 / 60) % 60)
+		const hours = Math.floor((total / (1000 * 60 * 60)) % 24)
+		const days = Math.floor(total / (1000 * 60 * 60 * 24))
+
+		return {
+			days: days < 10 ? `0${days}` : days,
+			hours: hours < 10 ? `0${hours}` : hours,
+			minutes: minutes < 10 ? `0${minutes}` : minutes,
+			seconds: seconds < 10 ? `0${seconds}` : seconds,
+		}
+	}
 	const [weather, setWeather] = useState({})
+	const [vacation, setVacation] = useState(getVacationTimer())
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setVacation(getVacationTimer())
+		}, 1000)
+
+		return () => clearInterval(interval)
+	}, [])
 
 	const images = [
 		'https://www.cozadzien.pl/img/2018/04/27/elektronik1.jpg',
@@ -222,11 +247,34 @@ function Home() {
 							<div className="card">
 								<div className="card__header">
 									<h2 className="card__header__title small">
-										Dziś mamy
+										Do wakacji zostało
 									</h2>
 								</div>
 								<div className="card__body small">
-									Imieniny: Kamila, Bartka
+									<div
+										className="inline"
+										style={{
+											flexDirection: 'row',
+											padding: '1rem 0',
+										}}
+									>
+										<div className="flex-center">
+											<h2>{vacation.days}</h2>
+											<h6>DNI</h6>
+										</div>
+										<div className="flex-center">
+											<h2>{vacation.hours}</h2>
+											<h6>GODZIN</h6>
+										</div>
+										<div className="flex-center">
+											<h2>{vacation.minutes}</h2>
+											<h6>MINUT</h6>
+										</div>
+										<div className="flex-center">
+											<h2>{vacation.seconds}</h2>
+											<h6>SEKUND</h6>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
