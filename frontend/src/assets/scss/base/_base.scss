@@ -37,3 +37,44 @@ small {
 	align-items: center;
 	margin: 1rem 0;
 }
+
+.profession {
+	position: relative;
+	height: 6rem;
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 4px;
+	margin-bottom: 0.5rem;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&:hover {
+		& img {
+			transform: scale(1.2);
+		}
+	}
+
+	& span {
+		margin: auto;
+		color: $light-color;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: auto;
+		font-weight: 600;
+	}
+
+	& img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		filter: brightness(45%);
+		transition: transform 0.2s ease-out;
+	}
+}

@@ -140,48 +140,55 @@ function Home() {
 						className="inline"
 						style={{ width: '85vw', margin: '0 auto' }}
 					>
-						<div className="card">
-							<div className="card__header">
-								<h2 className="card__header__title">
-									Aktualności
-								</h2>
-							</div>
-							<div className="card__body">
-								<ul className="list">
-									{news.map((item, idx) => (
-										<li className="list__item" key={idx}>
-											<img
-												src={item.img}
-												alt={item.title}
-												width={100}
-												className="list__item__image"
-											/>
-											<div className="list__item__body">
-												<h2 className="list__item__title">
-													{item.title}
-												</h2>
-												{item.description}
+						<main>
+							<div className="card">
+								<div className="card__header">
+									<h2 className="card__header__title">
+										Aktualności
+									</h2>
+								</div>
+								<div className="card__body">
+									<ul className="list">
+										{news.map((item, idx) => (
+											<li
+												className="list__item"
+												key={idx}
+											>
+												<img
+													src={item.img}
+													alt={item.title}
+													width={100}
+													className="list__item__image"
+												/>
+												<section className="list__item__body">
+													<h2 className="list__item__title">
+														{item.title}
+													</h2>
+													{item.description}
 
-												<div className="list__item__footer">
-													<small>
-														Opublikowano:{' '}
-														{item.published}
-													</small>{' '}
-													|{' '}
-													<small>{item.author}</small>{' '}
-													|{' '}
-													<small>
-														<a href="#">
-															Czytaj więcej
-														</a>
-													</small>
-												</div>
-											</div>
-										</li>
-									))}
-								</ul>
+													<div className="list__item__footer">
+														<small>
+															Opublikowano:{' '}
+															{item.published}
+														</small>{' '}
+														|{' '}
+														<small>
+															{item.author}
+														</small>{' '}
+														|{' '}
+														<small>
+															<a href="#">
+																Czytaj więcej
+															</a>
+														</small>
+													</div>
+												</section>
+											</li>
+										))}
+									</ul>
+								</div>
 							</div>
-						</div>
+						</main>
 						<div className="v-inline">
 							<div className="card">
 								<div className="card__header">
@@ -302,7 +309,52 @@ function Home() {
 										Kierunki kształcenia
 									</h2>
 								</div>
-								<div className="card__body small"></div>
+								<div className="card__body">
+									<figure className="profession">
+										<span>Technik programista</span>
+										<img
+											src="https://www.zespolszkolmechanicznych.edu.pl/wp-content/uploads/2020/01/technik-programista.jpg"
+											alt="programista"
+										/>
+									</figure>
+
+									<figure className="profession">
+										<span>Technik automatyk</span>
+										<img
+											src="https://www.kwalifikacjezawodowe.info/img/wo/7/13/zawod-Technik-automatyk-obrazek_sredni_4974713.jpg"
+											alt="automatyk"
+										/>
+									</figure>
+
+									<figure className="profession">
+										<span>Technik informatyk</span>
+										<img
+											src="https://wit.pwr.edu.pl/fcp/2GBUKOQtTKlQhbx08SlkTUg1CUWRuHQwFDBoIVURNWHxbDlhnRlUuWTISTnoYDxMe/190/public/news/pixabay/monitor-1307227_1920_1.jpg"
+											alt="informatyk"
+										/>
+									</figure>
+									<figure className="profession">
+										<span>Technik mechatronik</span>
+										<img
+											src="https://storage.opinieouczelniach.pl/cache/profession/1/Dv1Pcn7cZ-JXkERvcFaIZfFbD_mDY1l3.jpg?fm=pjpg&w=1120&h=500&fit=crop"
+											alt="mechatronik"
+										/>
+									</figure>
+									<figure className="profession">
+										<span>Technik elektronik</span>
+										<img
+											src="https://dokariery.pl/documents/20184/419709/Elektronik_1160.jpg/9161ec96-5444-4aca-a311-9526eebb43e8?t=1653478026202"
+											alt="elektronik"
+										/>
+									</figure>
+									<figure className="profession">
+										<span>Technik teleinformatyk</span>
+										<img
+											src="https://zawody.kwalifikacjezawodowe.info/img/exp_wo3/6/76/zawod-Technik-teleinformatyk-obrazek_duzy_107676.jpg"
+											alt="teleinformatyk"
+										/>
+									</figure>
+								</div>
 							</div>
 						</div>
 					</div>
