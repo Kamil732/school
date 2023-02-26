@@ -1,29 +1,10 @@
 .list {
-    list-style-type: none;
-
     &__item {
-        display: flex;
-        gap: 1rem;
-        background-color: $background-color;
-        margin-bottom: 1rem;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
+        flex-direction: row;
 
         &__image {
             width: 250px;
             object-fit: contain;
-        }
-
-        &__body {
-            padding: 0.5rem;
-            font-size: 0.9em;
-        }
-
-        &__title {
-            color: $primary-color;
-            text-align: center;
         }
     }
 }

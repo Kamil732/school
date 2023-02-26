@@ -136,7 +136,10 @@ function Home() {
 					triggerOffset={100}
 					delayInMilliseconds={50}
 				>
-					<div className="inline">
+					<div
+						className="inline"
+						style={{ width: '85vw', margin: '0 auto' }}
+					>
 						<div className="card">
 							<div className="card__header">
 								<h2 className="card__header__title">
@@ -144,7 +147,7 @@ function Home() {
 								</h2>
 							</div>
 							<div className="card__body">
-								<ul className="list" style={{ width: '60vw' }}>
+								<ul className="list">
 									{news.map((item, idx) => (
 										<li className="list__item" key={idx}>
 											<img
@@ -158,13 +161,28 @@ function Home() {
 													{item.title}
 												</h2>
 												{item.description}
+
+												<div className="list__item__footer">
+													<small>
+														Opublikowano:{' '}
+														{item.published}
+													</small>{' '}
+													|{' '}
+													<small>{item.author}</small>{' '}
+													|{' '}
+													<small>
+														<a href="#">
+															Czytaj więcej
+														</a>
+													</small>
+												</div>
 											</div>
 										</li>
 									))}
 								</ul>
 							</div>
 						</div>
-						<div className="v-inline" style={{ width: '20vw' }}>
+						<div className="v-inline">
 							<div className="card">
 								<div className="card__header">
 									<h2 className="card__header__title small">
@@ -184,6 +202,7 @@ function Home() {
 													className="flex-center inline"
 													style={{
 														margin: '-1rem 0',
+														flexDirection: 'row',
 													}}
 												>
 													<img
@@ -250,12 +269,12 @@ function Home() {
 										Do wakacji zostało
 									</h2>
 								</div>
-								<div className="card__body small">
+								<div className="card__body">
 									<div
 										className="inline"
 										style={{
 											flexDirection: 'row',
-											padding: '1rem 0',
+											gap: '0.5rem',
 										}}
 									>
 										<div className="flex-center">
@@ -276,6 +295,14 @@ function Home() {
 										</div>
 									</div>
 								</div>
+							</div>
+							<div className="card">
+								<div className="card__header">
+									<h2 className="card__header__title small">
+										Kierunki kształcenia
+									</h2>
+								</div>
+								<div className="card__body small"></div>
 							</div>
 						</div>
 					</div>
