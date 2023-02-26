@@ -5,6 +5,7 @@ import '../assets/css/main.css'
 import NavBar from '../components/NavBar'
 import MainPagehero from '../components/MainPagehero'
 import Routes from './Routes'
+import Footer from '../components/Footer'
 
 function App() {
 	return (
@@ -15,6 +16,8 @@ function App() {
 			<Suspense>
 				<Routes />
 			</Suspense>
+
+			<Footer />
 		</BrowserRouter>
 	)
 }

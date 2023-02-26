@@ -9,6 +9,7 @@
 @import './layout/slider/mobile';
 @import './layout/card/mobile';
 @import './layout/list/mobile';
+@import './layout/footer/mobile';
 @import './layout/btn';
 
 .tablet {
@@ -38,9 +39,7 @@
     @import './layout/slider/laptop';
     @import './layout/card/laptop';
     @import './layout/list/laptop';
-
-
-
+    @import './layout/footer/laptop';
 
     .quote {
         font-size: 1em;
