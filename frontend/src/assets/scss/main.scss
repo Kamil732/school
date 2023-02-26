@@ -24,12 +24,20 @@
     .tablet {
         display: initial;
     }
+
+    .inline {
+        flex-direction: row;
+    }
 }
 
 @include media-laptop {
     @import './layout/navbar/laptop';
     @import './layout/pagehero/laptop';
     @import './layout/slider/laptop';
+    @import './layout/card/laptop';
+    @import './layout/list/laptop';
+
+
 
 
     .quote {

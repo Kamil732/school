@@ -12,3 +12,16 @@
     justify-content: center;
     align-items: center;
 }
+
+.inline {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.v-inline {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

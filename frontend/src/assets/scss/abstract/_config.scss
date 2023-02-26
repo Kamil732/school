@@ -10,6 +10,10 @@
 	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+@mixin shadow-md {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 @mixin media-tablet {
 	@media screen and (min-width: 768px) {
 		@content;

@@ -1,0 +1,42 @@
+.card {
+    // margin: 0 auto;
+    background-color: $light-color;
+    @include shadow-md;
+    // width: min-content;
+    padding: 1rem;
+    border-radius: 4px;
+
+    &__header {
+        // margin-bottom: 0.5rem;
+        border-bottom: 2px solid $grey-color;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 15%;
+            height: 3px;
+            background-color: $primary-color;
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 2em;
+            letter-spacing: 1px;
+
+            &.small {
+                font-size: 1.1em;
+            }
+        }
+    }
+
+    &__body {
+        padding: 1rem 0;
+
+        &.small {
+            padding: 0;
+        }
+    }
+}

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
+import { FadeIn } from 'react-slide-fade-in'
 
-function PhotoSilder({ images }) {
+function PhotoSilder({ images, text }) {
 	const [active, setActive] = useState(0)
 
 	useEffect(() => {
@@ -24,7 +25,16 @@ function PhotoSilder({ images }) {
 					className={`slider__img${active === idx ? ' active' : ''}`}
 				/>
 			))}
-			<h1 className="slider__text">Witamy Na Stronie Elektronika!</h1>
+			{text && (
+				<FadeIn
+					from="bottom"
+					positionOffset={50}
+					triggerOffset={0}
+					delayInMilliseconds={750}
+				>
+					<h1 className="slider__text">{text}</h1>
+				</FadeIn>
+			)}
 		</figure>
 	)
 }
