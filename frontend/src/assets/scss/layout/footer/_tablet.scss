@@ -1,0 +1,9 @@
+.footer {
+    flex-direction: row;
+    padding: 2rem 5rem;
+    gap: 3rem;
+
+    & > div {
+        width: 33%;
+    }
+}

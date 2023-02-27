@@ -197,7 +197,7 @@ function Home() {
 									</h2>
 								</div>
 								<div className="card__body small">
-									<span>Imieniny: Kamila, Bartka</span>
+									<span>Imieniny: Józefa, Kaji</span>
 
 									<div className="weather">
 										{Object.keys(weather).length > 0 ? (

@@ -20,6 +20,7 @@
     @import './layout/navbar/tablet';
     @import './layout/pagehero/tablet';
     @import './layout/slider/tablet';
+    @import './layout/footer/tablet';
 
     .mobile {
         display: none;
@@ -39,7 +40,7 @@
     @import './layout/slider/laptop';
     @import './layout/card/laptop';
     @import './layout/list/laptop';
-    @import './layout/footer/laptop';
+
 
     .quote {
         font-size: 1em;

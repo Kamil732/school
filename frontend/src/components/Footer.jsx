@@ -19,9 +19,10 @@ function Footer() {
 						opacity: '0.9',
 						fontSize: '1.2em',
 						padding: '1rem 0',
+						lineHeight: '2em',
 					}}
 				>
-					<p>
+					<p style={{ textAlign: 'center', marginBottom: '0.5rem' }}>
 						Zespół Szkół Elektronicznych Im. Bohaterów Westerplatte
 					</p>
 					<p>Ul. Sadkowska 19</p>
@@ -43,25 +44,27 @@ function Footer() {
 					</h2>
 				</div>
 				{isLoaded && (
-					<GoogleMap
-						mapContainerStyle={{
-							width: '400px',
-							height: '300px',
-							marginTop: '1rem',
-						}}
-						center={{ lat: 21.178574, lng: 72.814149 }}
-						zoom={13}
-					>
-						<Marker
-							position={{
-								lat: 21.178574,
-								lng: 72.814149,
+					<div className="google-maps">
+						<GoogleMap
+							mapContainerStyle={{
+								width: '100%',
+								height: '250px',
+								margin: '1rem auto 0',
 							}}
-						/>
-					</GoogleMap>
+							center={{ lat: 21.178574, lng: 72.814149 }}
+							zoom={13}
+						>
+							<Marker
+								position={{
+									lat: 21.178574,
+									lng: 72.814149,
+								}}
+							/>
+						</GoogleMap>
+					</div>
 				)}
 			</div>
-			<div style={{ width: '25%' }}>
+			<div className="patron">
 				<div className="card__header">
 					<h2 className="card__header__title small">Patron szkoły</h2>
 				</div>

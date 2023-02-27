@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    background-color: $secondary-color;
+}
+
+.google-maps {
+    overflow: hidden;
+}
