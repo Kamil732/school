@@ -109,7 +109,7 @@ function NavBar() {
 						</NavLink>
 					</li>
 					<li className="navbar__list__item">
-						<NavLink to="/kontakt" onClick={onClick}>
+						<NavLink to="/school/kontakt" onClick={onClick}>
 							kontakt
 						</NavLink>
 					</li>
