@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/439.6e58082e.chunk.js","mappings":"kIAWA,UATA,WACC,OACC,iCACC,iCAAc,YAIjB,C","sources":["containers/Contact.jsx"],"sourcesContent":["import React from 'react'\r\n\r\nfunction Contact() {\r\n\treturn (\r\n\t\t<>\r\n\t\t\t<div>wfr</div>\r\n\t\t\twetheth\r\n\t\t</>\r\n\t)\r\n}\r\n\r\nexport default Contact\r\n"],"names":[],"sourceRoot":""}

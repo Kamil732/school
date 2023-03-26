@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/school/static/css/main.ba6dbfe3.css",
+    "main.js": "/school/static/js/main.9104106e.js",
+    "static/js/262.8487b97c.chunk.js": "/school/static/js/262.8487b97c.chunk.js",
+    "static/js/439.6e58082e.chunk.js": "/school/static/js/439.6e58082e.chunk.js",
+    "static/js/958.6a68664d.chunk.js": "/school/static/js/958.6a68664d.chunk.js",
+    "static/media/logo.png": "/school/static/media/logo.3b9b4f5c4e14088749d6.png",
+    "static/media/emblem.png": "/school/static/media/emblem.a29f2dd2b02c2c952369.png",
+    "static/media/westerplatte.jpg": "/school/static/media/westerplatte.93b0a0195918ba719c26.jpg",
+    "index.html": "/school/index.html",
+    "main.ba6dbfe3.css.map": "/school/static/css/main.ba6dbfe3.css.map",
+    "main.9104106e.js.map": "/school/static/js/main.9104106e.js.map",
+    "262.8487b97c.chunk.js.map": "/school/static/js/262.8487b97c.chunk.js.map",
+    "439.6e58082e.chunk.js.map": "/school/static/js/439.6e58082e.chunk.js.map",
+    "958.6a68664d.chunk.js.map": "/school/static/js/958.6a68664d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba6dbfe3.css",
+    "static/js/main.9104106e.js"
+  ]
+}
