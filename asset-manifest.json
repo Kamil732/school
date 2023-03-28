@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/school/static/css/main.ba6dbfe3.css",
-    "main.js": "/school/static/js/main.e8799b25.js",
+    "main.js": "/school/static/js/main.81405eeb.js",
     "static/js/262.8487b97c.chunk.js": "/school/static/js/262.8487b97c.chunk.js",
     "static/js/439.6e58082e.chunk.js": "/school/static/js/439.6e58082e.chunk.js",
     "static/js/958.6a68664d.chunk.js": "/school/static/js/958.6a68664d.chunk.js",
@@ -10,13 +10,13 @@
     "static/media/westerplatte.jpg": "/school/static/media/westerplatte.93b0a0195918ba719c26.jpg",
     "index.html": "/school/index.html",
     "main.ba6dbfe3.css.map": "/school/static/css/main.ba6dbfe3.css.map",
-    "main.e8799b25.js.map": "/school/static/js/main.e8799b25.js.map",
+    "main.81405eeb.js.map": "/school/static/js/main.81405eeb.js.map",
     "262.8487b97c.chunk.js.map": "/school/static/js/262.8487b97c.chunk.js.map",
     "439.6e58082e.chunk.js.map": "/school/static/js/439.6e58082e.chunk.js.map",
     "958.6a68664d.chunk.js.map": "/school/static/js/958.6a68664d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba6dbfe3.css",
-    "static/js/main.e8799b25.js"
+    "static/js/main.81405eeb.js"
   ]
 }
