@@ -60,12 +60,12 @@ function NavBar() {
 
 				<ul className={`navbar__list${!open ? ' closed' : ''}`}>
 					<li className="navbar__list__item">
-						<NavLink to="/school/" onClick={onClick}>
+						<NavLink to="/school" onClick={onClick}>
 							strona głowna
 						</NavLink>
 					</li>
 					<li className="navbar__list__item">
-						<NavLink to="/school//o-szkole" onClick={onClick}>
+						<NavLink to="/school/o-szkole" onClick={onClick}>
 							o szkole
 						</NavLink>
 					</li>
@@ -79,12 +79,12 @@ function NavBar() {
 						</a>
 					</li> */}
 					<li className="navbar__list__item">
-						<NavLink to="/school//oferty" onClick={onClick}>
+						<NavLink to="/school/oferty" onClick={onClick}>
 							oferty
 						</NavLink>
 					</li>
 					<li className="navbar__list__item">
-						<NavLink to="/school//strefa-ucznia" onClick={onClick}>
+						<NavLink to="/school/strefa-ucznia" onClick={onClick}>
 							strefa ucznia
 						</NavLink>
 					</li>
