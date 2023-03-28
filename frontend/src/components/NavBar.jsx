@@ -60,12 +60,12 @@ function NavBar() {
 
 				<ul className={`navbar__list${!open ? ' closed' : ''}`}>
 					<li className="navbar__list__item">
-						<NavLink to="/" onClick={onClick}>
+						<NavLink to="/school/" onClick={onClick}>
 							strona głowna
 						</NavLink>
 					</li>
 					<li className="navbar__list__item">
-						<NavLink to="/o-szkole" onClick={onClick}>
+						<NavLink to="/school//o-szkole" onClick={onClick}>
 							o szkole
 						</NavLink>
 					</li>
@@ -79,32 +79,32 @@ function NavBar() {
 						</a>
 					</li> */}
 					<li className="navbar__list__item">
-						<NavLink to="/oferty" onClick={onClick}>
+						<NavLink to="/school//oferty" onClick={onClick}>
 							oferty
 						</NavLink>
 					</li>
 					<li className="navbar__list__item">
-						<NavLink to="/strefa-ucznia" onClick={onClick}>
+						<NavLink to="/school//strefa-ucznia" onClick={onClick}>
 							strefa ucznia
 						</NavLink>
 					</li>
 					<li className="navbar__list__item">
-						<NavLink to="/strefa-rodzica" onClick={onClick}>
+						<NavLink to="/school/strefa-rodzica" onClick={onClick}>
 							strefa rodzica
 						</NavLink>
 					</li>
 					<li className="navbar__list__item">
-						<NavLink to="/sport-rekreacja" onClick={onClick}>
+						<NavLink to="/school/sport-rekreacja" onClick={onClick}>
 							sporty
 						</NavLink>
 					</li>
 					<li className="navbar__list__item">
-						<NavLink to="/ogloszenia" onClick={onClick}>
+						<NavLink to="/school/ogloszenia" onClick={onClick}>
 							ogłoszenia
 						</NavLink>
 					</li>
 					<li className="navbar__list__item">
-						<NavLink to="/linki" onClick={onClick}>
+						<NavLink to="/school/linki" onClick={onClick}>
 							linki
 						</NavLink>
 					</li>
